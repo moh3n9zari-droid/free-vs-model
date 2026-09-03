@@ -1,0 +1,8 @@
+litellm
+python-dotenv
+pyyaml
+qdrant-client
+fastapi
+uvicorn
+langchain
+langchain-community
