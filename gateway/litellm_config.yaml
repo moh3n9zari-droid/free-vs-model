@@ -1,0 +1,26 @@
+# LiteLLM Gateway Configuration
+
+router:
+
+  strategy: intelligent-routing
+
+  rules:
+
+    - task: architecture
+      model: premium
+
+    - task: coding
+      model: open_source
+
+    - task: simple
+      model: fast
+
+
+fallback:
+
+  enabled: true
+
+  order:
+    - premium
+    - open_source
+    - local
