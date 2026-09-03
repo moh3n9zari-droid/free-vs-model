@@ -1,0 +1,25 @@
+{
+  "name": "Free VS Model AI Environment",
+
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+
+  "postCreateCommand": "pip install -r requirements.txt",
+
+  "forwardPorts": [
+    8000,
+    6333
+  ],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Continue.continue",
+        "saoudrizwan.claude-dev"
+      ]
+    }
+  }
+}
