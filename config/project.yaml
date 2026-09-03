@@ -1,0 +1,27 @@
+project:
+  name: "Free VS Model"
+  version: "0.1"
+
+architecture:
+
+  ide:
+    - github-codespaces
+    - vscode
+
+  agents:
+    - cline
+    - continue
+
+  gateway:
+    - litellm
+
+  routing:
+    enabled: true
+    strategy: intelligent
+
+  memory:
+    enabled: true
+    type: rag
+
+  deployment:
+    containerized: true
