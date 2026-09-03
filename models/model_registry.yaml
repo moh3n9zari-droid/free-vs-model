@@ -1,0 +1,38 @@
+models:
+
+  claude:
+    provider: anthropic
+    category: premium
+    tasks:
+      - architecture
+      - complex_coding
+
+
+  gpt:
+    provider: openai
+    category: premium
+    tasks:
+      - reasoning
+      - debugging
+
+
+  deepseek-coder:
+    provider: openrouter
+    category: open_source
+    tasks:
+      - coding
+      - refactoring
+
+
+  qwen-coder:
+    provider: openrouter
+    category: open_source
+    tasks:
+      - coding
+
+
+  local-vllm:
+    provider: local
+    category: local
+    tasks:
+      - private_tasks
