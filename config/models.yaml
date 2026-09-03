@@ -1,0 +1,16 @@
+# Model Pool Configuration
+
+models:
+
+  premium:
+    - claude
+    - gpt
+    - gemini
+
+  open_source:
+    - deepseek-coder
+    - qwen-coder
+
+  local:
+    - vllm
+    - ollama
